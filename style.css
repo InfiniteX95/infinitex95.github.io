@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: white;
+    background-color: rgb(31, 31, 31);
+    font-family: 'Roboto', sans-serif;
+}
+
+/*
+#header{
+    display: flex;
+    align-items: left;
+    background-color: white;
+    height: 100px;
+}*/
+
+#footer{
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    background-color: rgb(20, 20, 20);
+    height: 50px;
+    min-width: 800px;
+    /*Fixing to the bottom*/
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* vertical alignment */
+    border-bottom: 1px solid rgb(73, 73, 73);
+    background-color: rgb(28, 28, 28);
+    position: sticky;
+    z-index: 2;
+    /*text-align: center;*/
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+    width: 100%;
+}
+
+#home {
+    margin-left: 15%;
+    margin-right: 40px;
+}
+
+#navbar ul{
+    display: block;
+    width: 100%;
+    list-style-type: none;
+    overflow: hidden;
+    /*background-color: grey;*/
+    padding: 10px;
+}
+
+#navbar li{
+    float: left;
+}
+
+#navbar li a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+
+    /* Fixing size li size*/
+    width: 85px;
+    text-align: center;
+
+    text-decoration: none;
+    border-radius: 30px;
+    margin: 0 5px 0 5px;
+}
+
+#navbar li a:hover {
+    background-color: rgb(194, 18, 18);
+}
+
+#navbar img {
+    width: 45px;
+    height: 45px;
+}
+
+.links{
+    float: right !important; 
+    margin-right:15% !important;
+}
+
+.links a {
+    background-color: rgb(1, 151, 1);
+}
+
+.links a:hover{
+    background-color: rgb(0, 116, 0) !important;
+}
+
+#content {
+    margin: 50px;
+}
