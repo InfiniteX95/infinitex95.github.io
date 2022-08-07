@@ -1,5 +1,7 @@
+/* Importing Roboto font from GFonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* General */
 * {
     margin: 0;
     padding: 0;
@@ -11,19 +13,14 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
-/*
-#header{
-    display: flex;
-    align-items: left;
-    background-color: white;
-    height: 100px;
-}*/
+/* Footer */
 
 #footer{
     display: flex;
     align-items: center;
     /*justify-content: center;*/
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(28, 28, 28);
+    border-top: 1px solid rgb(73, 73, 73);
     height: 50px;
     min-width: 800px;
     /*Fixing to the bottom*/
@@ -32,6 +29,12 @@ html {
     width: 100%;
 }
 
+#footer p{
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+/* Navbar */
 #navbar {
     display: flex;
     flex-direction: row;
@@ -50,7 +53,7 @@ html {
 }
 
 #home {
-    margin-left: 15%;
+    margin-left: 15vw;
     margin-right: 40px;
 }
 
@@ -60,7 +63,8 @@ html {
     list-style-type: none;
     overflow: hidden;
     /*background-color: grey;*/
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #navbar li{
@@ -92,7 +96,7 @@ html {
 
 .links{
     float: right !important; 
-    margin-right:15% !important;
+    margin-right: 15vw !important;
 }
 
 .links a {
@@ -103,6 +107,37 @@ html {
     background-color: rgb(0, 116, 0) !important;
 }
 
+/* Body */
+
 #content {
     margin: 50px;
+}
+
+#content a:link {
+    color: rgb(1, 151, 1);
+}
+
+#content a:visited {
+    color: rgb(1, 151, 1);
+}
+
+.pres-layout {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.pres-image {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-style: italic;
+    color: white;
+    line-height: 10px;
+}
+
+.pres-text {
+    max-width: 700px;
 }
