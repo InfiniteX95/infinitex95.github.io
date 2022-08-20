@@ -13,9 +13,10 @@
     <!--JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
+        /*
         $(function(){
             $('#navbar').load('navbar.html');
-        });
+        });*/
         $(window).on('load', function(){
             $("#content").fadeIn(1000);
         });
@@ -23,12 +24,18 @@
 </head>
 <body>
     <div id="navbar">
+        <a href="index.html" id="home"><img src="logo.png"></a>
+        <ul>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li class="links"><a href="links.html"><i class="fa-solid fa-link"></i> Links</a></li>
+        </ul>
     </div>
     
     <div id="content" style="display:none">
         <div class="pres-layout">
             <div class="pres-image">
-                <img src="pfp.png" style="border-radius:20px; width:180px;"><br>
+                <img src="pfp.png" style="border-radius:20px; width:180px; height: 180px;"><br>
                 <!--<h5>Art by </h5>-->
             </div>
             <div class="pres-text">
