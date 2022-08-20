@@ -10,18 +10,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Twemoji Awesome-->
     <link href="https://rawgit.com/ellekasai/twemoji-awesome/gh-pages/twemoji-awesome.css" rel="stylesheet">
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('#navbar').load('navbar.html');
+        });
+        $(window).on('load', function(){
+            $("#content").fadeIn(1000);
+        });
+    </script>
 </head>
 <body>
     <div id="navbar">
-        <a href="index.html" id="home"><img src="logo.png"></a>
-        <ul>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="downloads.html">Downloads</a></li>
-            <li class="links"><a href="links.html"><i class="fa-solid fa-link"></i> Links</a></li>
-        </ul>
     </div>
     
-    <div id="content">
+    <div id="content" style="display:none">
         <div class="pres-layout">
             <div class="pres-image">
                 <img src="pfp.png" style="border-radius:20px; width:180px;"><br>
@@ -30,7 +34,7 @@
             <div class="pres-text">
                 <h1>Hey !</h1><br>
                 <p>I'm Infinite, a <i class="twa twa-fr" title="French flag"></i> student who does web and software development during his free time.</p><br>
-                <p>Here, on my website, you will find many things about everything I do including a list of all the projects I took part into, along with downloads of some content I released and many more...</p><br>
+                <p>Here, on my website, you will find many things about everything I do including a list of all the projects I took part into, along with downloads for some content I released and many more...</p><br>
                 <p>If you're interested in getting more content from me, you can <a href="links.html">find me on various social medias !</a></p><br>
                 <p>I hope you're having as much fun browsing my website as I had while making it !</p><br>
                 <p style="text-align:right;font-style: italic;">~ Thanks y'all !</p>
