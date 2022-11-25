@@ -164,6 +164,7 @@ html {
     overflow: hidden;
     padding: 16px;
     text-decoration: none;
+    align-items: center;
 
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
@@ -225,4 +226,54 @@ html {
 
 .copied img{
     opacity: 0;
+}
+
+/* Projects - Tiles (copy of link tiles) */
+
+#projects-mosaic-layout{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+
+.pj-link{
+    background-color: rgb(28, 28, 28);
+    border-radius: 6px;
+    box-shadow: 0 4px 7px 3px rgb(0 0 0 / 10%);
+    border: 1px solid rgb(73, 73, 73);
+    display: flex;
+    margin: 5px;
+    overflow: hidden;
+    padding: 16px;
+    text-decoration: none;
+    align-items: center;
+
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+    transition: background-color .3s cubic-bezier(.42,0,.58,1);
+}
+
+.pj-link:hover{
+    background-color: rgb(38, 38, 38);
+}
+
+.pj-link img{
+    height: 64px; 
+    width: 64px;
+    border-radius: 20%;
+
+    transition: opacity .1s cubic-bezier(.42,0,.58,1);
+}
+
+.pj-link-text{
+    margin-left: 12px;
+    margin-top: 8px;
+
+    transition: opacity .1s cubic-bezier(.42,0,.58,1);
+}
+
+.pj-link-text p{
+    margin-bottom: 8px;
 }
